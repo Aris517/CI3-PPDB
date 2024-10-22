@@ -245,14 +245,14 @@ class Pendaftaran extends CI_Controller
                 $mail->SMTPAuth   = true;
                 $mail->Host       = 'smtp.googlemail.com';
                 $mail->SMTPAuth   = true;
-                $mail->Username   = 'armuz05@gmail.com'; // ubah dengan alamat email Anda
-                $mail->Password   = 'dstl nzmm xyrf idlb'; // ubah dengan app password yang telah diuat
+                $mail->Username   = ''; // ubah dengan alamat email Anda
+                $mail->Password   = ''; // ubah dengan app password yang telah diuat
                 $mail->SMTPSecure = 'ssl';
                 $mail->Port       = 465;
 
-                $mail->setFrom('armuz05@gmail.com', 'Armuz05'); // ubah dengan alamat email Anda
+                $mail->setFrom('', ''); // ubah dengan alamat email dan nama Anda
                 $mail->addAddress($to);
-                $mail->addReplyTo('armuz@gmail.com', 'Armuz05'); // ubah dengan alamat email Anda
+                $mail->addReplyTo('', ''); // ubah dengan alamat email dan nama Anda
 
                 // Isi Email
                 $mail->isHTML(true);
